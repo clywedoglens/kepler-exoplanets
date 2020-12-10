@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Exploration and Engineering</title>
+  </head>
+  <body>
+    <h1>Data Exploration and Engineering</h1>
+    <p>Before even beginning to build our models, we need to make sense of our data. Data exploration is the process of using Python's libraries to inspect and make sense of what is in our dataset.</p>
+
+    <img src="{{url_for('static', filename='data head.png')}}" alt=""
+          data-wow-delay="0.5s">
+
+    <p>We ultimately want to predict the value for 'koi_pdisposition' as either CONFIRMED or CANDIDATE</p>
+
+    <p>After inspecting our data, we want to make sure our data is in a suitable format for our future models. This is data engineering. We "sanitize" our data to make sure we have no null values</p>
+
+    <img src="{{url_for('static', filename='data sanitation.png')}}" alt=""
+          data-wow-delay="0.5s">
+
+    <p>We are closer to begin building our model. We need to look at what features to pick so that our models can learn what makes a confirmed exoplanet vs a false positive exoplanet. We create a heatmap of correlation between all of the remaining data columns. </p>
+
+    <img src="{{url_for('static', filename='correlation heatmap.png')}}" alt=""
+          data-wow-delay="0.5s">

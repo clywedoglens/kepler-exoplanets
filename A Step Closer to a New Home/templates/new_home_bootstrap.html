@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>A Step Closer to a New Home</title>
+  </head>
+  <body>
+<main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">A Step Closer to a New Home</h1>
+	  <h3 class="jumbotron-heading">Sirius</h2>
+          <h3 class="jumbotron-heading">Samuel Moise and George Vergara</h2>
+          <p class="lead text-muted">We are a team of fellows with the 2020 CUNY Tech Prep program on the Data Science track.</p>
+          <p class="lead text-muted">This is a Flask web app providing an insight into our process and results.</p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="{{url_for('static', filename='correlation heatmap.png')}}" data-holder-rendered="true">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('data_exp_and_eng') }} " class="btn btn-secondary my-4">Data Exploration and Engineering</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{{url_for('static', filename='decision tree.png')}}" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('features_and_models') }} " class="btn btn-secondary my-4">Features and Models</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{{url_for('static', filename='X and y definition.png')}}" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="{{ url_for('model_evaluation') }} " class="btn btn-secondary my-4">Model Evaluation</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

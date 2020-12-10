@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Features and Models</title>
+  </head>
+  <body>
+    <h1>Features and Models</h1>
+    <p>During our data exploration and engineering, we made a heatmap looking at what values correlate the most with others. Here it is again.</p>
+
+    <img src="{{url_for('static', filename='correlation heatmap.png')}}" alt=""
+          data-wow-delay="0.5s">
+
+    <p>We focus specifically on what columns correlate the most with koi_pdisposition. In this case, we decide to pick the features of "koi_teq", "koi_model_snr", "koi_duration", "koi_impact", and "koi_depth" to train our models. We include a table of the features and their definition from the Kepler website</p>
+
+    <table style ="width:100%" border ='1' style='border-collapse:collapse'>
+      <tr>
+        <th>Feature</th>
+        <th>Concept</th>
+        <th>Definition</th>
+      </tr>
+      <tr>
+       <td>koi_teq</td>
+       <td>Equilibrium Temperature (Kelvin)</td>
+       <td>Approximation for the temperature of the planet. </td>         
+      </tr>
+      <tr>
+       <td>koi_model_snr</td>
+       <td>Transit Signal-to-Noise</td> 
+       <td>Transit depth normalized by the mean uncertainty in the flux during the transits.</td>
+      </tr>
+      <tr>
+        <td>koi_duration</td>
+        <td>Transit Duration (hours) </td>
+        <td>The duration of the observed transits. Duration is measured from first contact between the planet and star until last contact.</td>
+      </tr>
+      <tr>
+        <td>koi_impact</td>
+        <td>Impact Parameter</td>
+        <td>The sky-projected distance between the center of the stellar disc and the center of the planet disc at conjunction, normalized by the stellar radius. </td>
+      </tr>
+      <tr>
+        <td>koi_depth</td>
+        <td>Transit Depth (parts per million)</td>
+        <td> The fraction of stellar flux lost at the minimum of the planetary transit.</td>
+      </tr>
+    </table>
+
+    <p>Our focus was to build multiple models, trying to improve the accuracy each time. We used the following models:</p>
+
+    <ol>
+      <li>Decision Tree Classifier</li>
+      <li>Random Forest Model</li>
+
+    <img src="{{url_for('static', filename='decision tree.png')}}" alt=""
+          data-wow-delay="0.5s">
+
